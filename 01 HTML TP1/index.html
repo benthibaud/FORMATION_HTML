@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tableaux</title>
+    <style>
+      table,
+      th,
+      td {
+        border: 1px solid black;
+        border-collapse: collapse;
+      }
+    </style>
+  </head>
+  <body>
+    <table cellpadding="10" style="width: 80%; margin-top: 10px">
+      <caption style="margin-bottom: 10px">
+        TD sur les tableaux
+      </caption>
+      <thead>
+        <tr>
+          <th>Entreprise</th>
+          <th>Division</th>
+          <th>Ref</th>
+          <th>Franchise</th>
+          <th>Employés</th>
+          <th>CA (millions €)</th>
+        </tr>
+      </thead>
+      <tbody style="text-align: center">
+        <tr>
+          <td rowspan="6">Google</td>
+          <td rowspan="5">Google Ltd</td>
+          <td rowspan="3">YT</td>
+          <td>ADS</td>
+          <td>1 052</td>
+          <td>10,7</td>
+        </tr>
+        <tr>
+          <td>BTO</td>
+          <td>204</td>
+          <td>150,1</td>
+        </tr>
+        <tr>
+          <td>CSI</td>
+          <td>3 543</td>
+          <td>60</td>
+        </tr>
+        <tr>
+          <td rowspan="2">MAP</td>
+          <td>ADS</td>
+          <td>48</td>
+          <td>10,7</td>
+        </tr>
+        <tr>
+          <td>BTO</td>
+          <td>5 471</td>
+          <td>15,8</td>
+        </tr>
+        <tr>
+          <td colspan="3">Total</td>
+          <td>10 318</td>
+          <td>247,3</td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>

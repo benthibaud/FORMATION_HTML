@@ -1,0 +1,30 @@
+body {
+  min-height: 96vh;
+  margin: 1%;
+  gap: 1%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-areas: "j j p" "r v p" "r o o";
+}
+
+div:nth-child(1) {
+  background: yellow;
+  grid-area: j;
+}
+div:nth-child(2) {
+  background: purple;
+  grid-area: p;
+}
+div:nth-child(3) {
+  background: green;
+  grid-area: v;
+}
+div:nth-child(4) {
+  background: red;
+  grid-area: r;
+}
+div:nth-child(5) {
+  background: orchid;
+  grid-area: o;
+}
