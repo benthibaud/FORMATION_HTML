@@ -1,0 +1,15 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap");
+
+$green: #019247;
+$gradient: #f4f4f4 linear-gradient(70deg, #a5c3a1 0%, #b2d9ac 14%, #f2fff0 100%);
+$survol-bg: rgba(68, 68, 68, 0.9);
+
+html {
+  background: $green;
+}
+
+a:focus,
+a:active,
+a:visited {
+  outline: 0;
+}

@@ -1,0 +1,60 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap");
+html {
+  background: #019247;
+}
+
+a:focus,
+a:active,
+a:visited {
+  outline: 0;
+}
+
+body {
+  font-family: "Source Sans Pro", sans-serif;
+  background: #f4f4f4 linear-gradient(70deg, #a5c3a1 0%, #b2d9ac 14%, #f2fff0 100%);
+  max-width: 70%;
+  padding: 20px;
+  margin: 20px 10px 20px auto;
+}
+@media screen and (max-width: 500px) {
+  body {
+    max-width: unset;
+    margin: 20px 10px;
+    text-align: center;
+  }
+}
+body a {
+  text-align: left;
+  padding: 15px;
+}
+body a .survol {
+  position: absolute;
+  width: 20vw;
+  margin-top: -15px;
+  margin-left: -60px;
+  background: rgba(68, 68, 68, 0.9);
+  color: #fff;
+  font-size: 0.9rem;
+  line-height: 1.1rem;
+  letter-spacing: 0.05rem;
+  padding: 10px;
+  -webkit-transform: scale(0);
+          transform: scale(0);
+  -webkit-transform-origin: bottom left 100px;
+          transform-origin: bottom left 100px;
+  -webkit-transition: 1s;
+  transition: 1s;
+  opacity: 0;
+  z-index: 10;
+}
+@media screen and (max-width: 500px) {
+  body a .survol {
+    width: 45vw;
+    margin-left: -32vw;
+  }
+}
+body a:hover .survol {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  opacity: 0.9;
+}/*# sourceMappingURL=survol.css.map */

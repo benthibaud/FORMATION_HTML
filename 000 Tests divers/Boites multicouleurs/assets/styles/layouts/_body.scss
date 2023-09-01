@@ -1,0 +1,76 @@
+body {
+  font-family: $font-normal;
+  font-size: max(1.1vw, 0.8rem);
+  letter-spacing: 1px;
+  line-height: 1.8;
+  background: $black;
+  width: 80%;
+  margin: 30px auto;
+  color: $white;
+
+  @media screen and (max-width: 1000px) {
+    width: 90%;
+  }
+  
+  h2 {
+    font-family: $font-title;
+    font-size: max(2vw, 1.5rem);
+    letter-spacing: 4px;
+    font-variant-caps: small-caps;
+  }
+  
+  ul {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: .5%;
+    min-height: 50vh;
+    
+    @media screen and (max-width: 650px) {
+      grid-template-columns: 1fr;
+      min-height: unset;
+    }
+
+    li {
+      margin: 14px;
+      padding: 12px;
+      text-align: center;
+      border-radius: 10px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      cursor: pointer;
+      transition: 0.3s;
+      
+      &:nth-child(1) {
+        @include ColorsetGreen;
+        height: 60%;
+      }
+      
+      &:nth-child(2) {
+        @include ColorsetWhite;
+        height: 80%;
+      }
+      
+      &:nth-child(3) {
+        @include ColorsetRed;
+        height: 100%;
+      }
+      
+      &:nth-child(n) {
+        @media screen and (max-width: 650px) {
+          height: unset;
+        }
+      }
+      
+      p {
+        width: 85%;
+        margin: 0 auto;
+      }
+      
+      &:hover {
+        margin: 4px 24px 24px 4px;
+        box-shadow: 12px 12px 12px 6px rgba(255, 255, 255, 0.25);
+      }
+    }
+  }
+}

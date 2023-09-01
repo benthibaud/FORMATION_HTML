@@ -1,0 +1,40 @@
+@font-face {
+  src: url(../fonts/Gilroy-ExtraBold.otf);
+  font-family: "Gilroy-bold";
+}
+@font-face {
+  src: url(../fonts/Gilroy-Light.otf);
+  font-family: "Gilroy";
+}
+
+// variables
+$font-normal: "Giroy", sans-serif;
+$font-title: "Gilroy-bold", sans-serif;
+$green: #019247;
+$red: #CE2B37;
+$white: #FFFEFE;
+$black: #010015;
+
+// sets of colors
+@mixin ColorsetGreen {
+  background: $green;
+  color: $white;
+}
+@mixin ColorsetWhite {
+  background: $white linear-gradient(300deg, #a5c3a1 0%, #b2d9ac 14%, #f2fff0 100%);
+  color: $green;
+}
+@mixin ColorsetRed {
+  background: $red;
+  color: $white;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+li {
+  list-style: none;
+}

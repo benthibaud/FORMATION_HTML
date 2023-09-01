@@ -1,0 +1,100 @@
+@font-face {
+  src: url(../fonts/Gilroy-ExtraBold.otf);
+  font-family: "Gilroy-bold";
+}
+@font-face {
+  src: url(../fonts/Gilroy-Light.otf);
+  font-family: "Gilroy";
+}
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+li {
+  list-style: none;
+}
+
+body {
+  font-family: "Giroy", sans-serif;
+  font-size: max(1.1vw, 0.8rem);
+  letter-spacing: 1px;
+  line-height: 1.8;
+  background: #010015;
+  width: 80%;
+  margin: 30px auto;
+  color: #FFFEFE;
+}
+@media screen and (max-width: 1000px) {
+  body {
+    width: 90%;
+  }
+}
+body h2 {
+  font-family: "Gilroy-bold", sans-serif;
+  font-size: max(2vw, 1.5rem);
+  letter-spacing: 4px;
+  font-variant-caps: small-caps;
+}
+body ul {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.5%;
+  min-height: 50vh;
+}
+@media screen and (max-width: 650px) {
+  body ul {
+    grid-template-columns: 1fr;
+    min-height: unset;
+  }
+}
+body ul li {
+  margin: 14px;
+  padding: 12px;
+  text-align: center;
+  border-radius: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  cursor: pointer;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+body ul li:nth-child(1) {
+  background: #019247;
+  color: #FFFEFE;
+  height: 60%;
+}
+body ul li:nth-child(2) {
+  background: #FFFEFE linear-gradient(300deg, #a5c3a1 0%, #b2d9ac 14%, #f2fff0 100%);
+  color: #019247;
+  height: 80%;
+}
+body ul li:nth-child(3) {
+  background: #CE2B37;
+  color: #FFFEFE;
+  height: 100%;
+}
+@media screen and (max-width: 650px) {
+  body ul li:nth-child(n) {
+    height: unset;
+  }
+}
+body ul li p {
+  width: 85%;
+  margin: 0 auto;
+}
+body ul li:hover {
+  margin: 4px 24px 24px 4px;
+  -webkit-box-shadow: 12px 12px 12px 6px rgba(255, 255, 255, 0.25);
+          box-shadow: 12px 12px 12px 6px rgba(255, 255, 255, 0.25);
+}/*# sourceMappingURL=index.css.map */

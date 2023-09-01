@@ -1,0 +1,46 @@
+body {
+  font-family: "Source Sans Pro", sans-serif;
+  background: $gradient;
+  max-width: 70%;
+  padding: 20px;
+  margin: 20px 10px 20px auto;
+
+  @media screen and (max-width: 500px) {
+    max-width: unset;
+    margin: 20px 10px;
+    text-align: center;
+  }
+  
+  a {
+    text-align: left;
+    padding: 15px;
+  }
+  
+  a .survol {
+    position: absolute;
+    width: 20vw;
+    margin-top: -15px;
+    margin-left: -60px;
+    background: $survol-bg;
+    color: #fff;
+    font-size: 0.9rem;
+    line-height: 1.1rem;
+    letter-spacing: 0.05rem;
+    padding: 10px;
+    transform: scale(0);
+    transform-origin: bottom left 100px;
+    transition: 1s;
+    opacity: 0;
+    z-index: 10;
+
+    @media screen and (max-width: 500px) {
+      width: 45vw;
+      margin-left: -32vw;
+    }
+  }
+  
+  a:hover .survol {
+    transform: scale(1);
+    opacity: 0.9;
+  }
+}
